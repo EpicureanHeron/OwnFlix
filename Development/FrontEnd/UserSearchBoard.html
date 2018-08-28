@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OwnFlix</title>
+
+    <!-- Fonts -->
+
+
+    <!--CSS Reset-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <!--Third Party CSS link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette%7CKarla:700%7CRock+Salt" rel="stylesheet">
+
+	<!--Custom Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="userstyles.css">
+    <link rel="stylesheet" type="text/css" href="modelcss.css">
+
+  </head>
+
+  <body class='userdash'>
+        <!--Header Div-->
+        <div class = "landing-header">
+            <!--logo and sign in button-->
+            <Div class="container usercontainer">
+                <div class="row">
+                    <div class="col-sm-2"><a class="navbar-brand text-dark"  href="landingPage.html"><p id="logo">OwnFlix</p></a></div>
+                    <div class="col-sm-10" id="landing-header-view">
+                        <div class="row">
+                            <div class="col-sm-8"></div>
+                            <div class="col-sm-2"><a class="navbar-brand text-dark hvr-bounce-in"  href="DashboardPage.html" ><button type='button' class="btn btn-default" id="dashboard-button">Dashboard</button></a></div>
+                            <div class="col-sm-2"><a class="navbar-brand text-dark hvr-bounce-in"  href="UserSearchBoard.html" ><button type='button' class="btn btn-default" id="user-page-button">User</button></a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </Div>
+        </div>
+
+        <!--User information Section-->
+            <!--Pull user info from database post to page-->
+        <div class='container usercontainer'>
+            <div class='jumbotron userjumbotron'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                            <div><h3><u>User Information</u></h3></div>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <!--populate user account data here or reference-->
+                                <div id='user-data'>User Data</div>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <!--User Table of movies owned here-->
+                                <div id='user-movies'>User Movie table</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--User movies owned-->
+
+            <!--Search movie db for owner ID-->
+            <!--update page with table of content-->
+        
+
+            <!--location for search bar and results-->
+            <div class='container usercontainer'>
+                <div class='jumbotron userjumbotron'>
+                    <div class='row'>
+                        <div class='col-sm-12'>
+                            <div><h3><u>Add Your Movies Here</u></h3></div>
+                            <form id="addButtonForm">
+                                    <label for="searchMovie">Search Movies</label>
+                                    <input type="text" id="searchMovie">
+                                    <br>
+                                    <!-- Button triggers new movie to be added -->
+                                    <input class="btn btn-info" id="searchMovieBtn" type="submit" value="Search a Movie">
+                                    
+                                    
+                                    </form>
+                            
+                                    <div id ="movies-view"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Search AJAX request for new movie-->
+            <!-- click on movie page creates new entry in movie database with user as owner-->
+
+
+ 
+
+       
+	<!-- ! Scripts  -->
+	<!-- ! jQuery 3.3.1  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+	<!-- {{! Bootstrap JS }} -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- {{! Custom JS }} -->
+	<script type="text/javascript" src="UserDashboardApp.js"></script>
+
+	</body>
+</html>

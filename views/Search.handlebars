@@ -1,0 +1,54 @@
+  <div class='userdash'>
+        <!--Header Div-->
+        <div class = "landing-header">
+            <!--logo and sign in button-->
+            <Div class="container">
+                <div class="row">
+                    <div class="col-sm-2"><a class="navbar-brand text-dark"  href="/dashboard"><p id="logo">OwnFlix</p></a></div>
+                    <div class="col-sm-10" id="landing-header-view">
+                        <div class="row">
+                            <div class="col-sm-8"></div>
+                            <div class="col-sm-2"><a class="navbar-brand text-dark hvr-bounce-in"  href="Dashboard" ><button type='button' class="btn btn-default" id="dashboard-button" style="color: whitesmoke">Dashboard</button></a></div>
+                            <div class="col-sm-2"><a class="navbar-brand text-dark hvr-bounce-in"  href="movies" ><button type='button' class="btn btn-default" id="user-page-button" style="color: whitesmoke">User</button></a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </Div>
+        </div>
+
+        <!--Main Content Div-->
+        <div class='container'>
+                <div class='jumbotron' style=" background-color: rgba(12, 9, 9, 0.6); color: whitesmoke">
+                    <div class='row'>
+                        <div class='col-sm-12'>
+                            <div><h3><u>Search for Avilable Movies</u></h3></div>
+                            <form id="addButtonForm">
+                        <label for="searchMovie">Search Movies</label>
+                        <input type="text" id="searchMovie">
+                        <br>
+                        <!-- Button triggers new movie to be added -->
+                        <input class="btn btn-info" id="searchMovieBtn" type="submit" value="Search a Movie">
+                    </form>
+
+
+
+                    <!-- Sign In Modal -->
+
+                </div>
+
+            </div>
+
+             <div class='row' id ="movies-view" style='margin:auto'></div>
+        </div>
+    </div>
+
+</div>
+<div id='movieSelectedModal' class='modal'>
+
+    <div class='row' id='modal-content'>
+        <div class='col-sm-4'></div>
+        <div class='col-sm-4 movieClicked sign-in-form'>
+        </div>
+    </div>
+</div>

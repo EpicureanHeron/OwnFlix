@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OwnFlix</title>
+
+    <!-- Fonts -->
+
+
+    <!--CSS Reset-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <!--Third Party CSS link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette%7CKarla:700%7CRock+Salt" rel="stylesheet">
+
+	<!--Custom Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="landingstyle.css">
+    <link rel="stylesheet" type="text/css" href="modalstyle.css">
+
+  </head>
+
+	<body>
+        <!--Header Div-->
+        <div class = "landing-header">
+            <!--logo and sign in button-->
+            <Div class="container">
+                <div class="row">
+                    <div class="col-sm-2"><a class="navbar-brand text-dark"  href="landingPage.html"><p id="logo">OwnFlix</p></a></div>
+                    <div class="col-sm-10" id="landing-header-view">
+                        <div class="row">
+                            <div class="col-sm-10"></div>
+                            <div class="col-sm-2 buttons"><button type="button" class="btn btn-default" id="sign-in">Sign In</button></div>
+                        </div>
+                    </div>
+                </div>
+            </Div>
+        </div>
+
+
+        <!-- New User Modal Content -->
+        <div id='new-user-modal' class='modal'>
+
+          <div class='row' id='modal-content'>
+            <div class='col-sm-3'></div>
+             <div class='col-sm-6 sign-in-form'>
+               <span class="close">&times;</span>
+                <h3>Create Account</h3>
+                <form id='create-account-form' name='new-user-form'>
+                <br><label for="firstName">First Name</label><input name='firstName' type='text' id='firstName'>
+                <br>
+                <br>
+                <label for="lastName">Last Name</label><input name='lastName' type='text' id='lastName'>
+                <br>
+                <br>
+                <label for="email">Email</label><input type='text' id='email' name='email'>
+                <br>
+                <br>
+                <label for="address">Address</label><input type='text' id='address' name='address'>
+                <br>
+                <br>
+                <label for="city">City</label><input type='text' id='city' name='city'>
+                <br>
+                <br>
+                <label for="state">State (XX)</label><input type='text' id='state' name='state'>
+                <br>
+                <br>
+                <label for="zip">Zip Code (XXXXX)</label><input type='text' id='zip' name='zip'>
+                <br>
+                <br>
+                <label for="password">Password</label><input type='password' id='password' name='password'>
+                <br>
+                <br>
+                <input type='submit' id='submit-new-user' value='Submit'>
+              </form>
+             </div>
+             <div class='col-sm-3'></div>
+          </div>
+        </div>
+
+        <!-- Sign In Modal -->
+        <div id='sign-in-modal' class='modal'>
+
+          <div class='row' id='modal-content'>
+            <div class='col-sm-4'></div>
+            <div class='col-sm-4 sign-in-form'>
+              <span class="close">&times;</span>
+               <h3>Sign In</h3>
+               <br>
+               <form id='sign-in-form'>
+               <input type='text' id='user-email' placeholder='Email'>
+               <br>
+               <br>
+               <input type='password' id='user-password' placeholder='Password'>
+               <br>
+               <br>
+               <input type='submit' id='submit-sign-in' href='UserPage.html' value='Submit'>
+             </form>
+               <br>
+               <br>
+               <button id='new-user'>New? Sign up Now.</button>
+               <div class='col-sm-4'></div>
+            </div>
+        </div>
+      </div>
+
+
+        <!--Main Content Div-->
+        <div class="container">
+
+            <div class="row" id="login">
+                <div class = "col-sm-12">
+                    <!--containers get put here-->
+                    <div id="login-view">
+                        <H1>See What's Next</H1>
+                        <H3>Your next movie could be just up the street.</H3>
+                        <div class="col-sm-2 buttons"><button type="button" class="btn btn-default" id="create-new-user">Create New User</button></div>
+
+                        <div class="col-sm-12 jumbotron">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img class="d-block w-100" src="" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                            <img class="d-block w-100" src="" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                            <img class="d-block w-100" src="" alt="Third slide">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+	<!-- ! Scripts  -->
+	<!-- ! jQuery 3.3.1  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+	<!-- {{! Bootstrap JS }} -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- {{! Custom JS }} -->
+	<script type="text/javascript" src="LandingPageApp.js"></script>
+
+	</body>
+</html>

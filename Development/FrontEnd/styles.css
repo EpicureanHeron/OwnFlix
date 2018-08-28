@@ -1,0 +1,78 @@
+.list-group-item {
+  line-height: 2.5;
+}
+/* Background */
+.userdash{
+    background-color:  whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(12, 9, 9, 0.6);
+    text-shadow: 2px 1px 1px  rgba(29, 28, 28, 0.705)
+};
+body{
+    background-color: rgba(12, 9, 9, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-shadow: 2px 1px 1px  rgba(29, 28, 28, 0.705)
+};
+
+
+
+/* Header / title  landing-header*/
+.landing-header{
+    padding-top:2em;
+}
+.jumbotron{
+    margin: 2rem 0;
+}
+
+#logo{
+    font-family: 'karla', sans-serif;
+    font-size:3rem;
+    font-weight: 300;
+    color: #D72f2f;
+    text-shadow: 2px 1px 1px  rgba(29, 28, 28, 0.705)
+}
+#sign-in, #search-button, #your-movies-button, #User-dashboard, #dashboard-button, #user-page-button  {
+    float:right; 
+    margin-top: 1rem; 
+    background-color: #D72f2f;
+    text-shadow: 1px .5px .5px  rgba(235, 218, 218, 0.493)
+}
+
+#login .buttons{
+    margin-top:2em;
+    text-shadow: 1px .5px .5px  rgb(139, 95, 95)
+}
+
+/* Front Page ID login-view*/
+#login{
+    padding: 5em 0;
+}
+/* Sign in Page class signin-user-view*/
+.sign-in-form{
+    border:2px solid black;
+    text-align: center;
+    padding: 2em;
+    color: rgb(8, 6, 6);
+    background-color: rgba(187, 184, 184, 0.856);
+    text-shadow: 1px .5px .5px  rgba(48, 39, 39, 0.493)
+}
+
+/* New Account Page class new-user-view*/
+.sign-in-form{
+    border:2px solid black;
+    text-align: center;
+    padding: 2em;
+    color: rgb(8, 6, 6);
+    background-color: rgba(187, 184, 184, 0.856);
+    text-shadow: 1px .5px .5px  rgba(48, 39, 39, 0.493)
+}
+
+/* Dashboard Page */
+#top-section, #mid-section, #bot-section{
+    margin: 1rem 0;
+}
+
+/* Search Page */
+
+/* Movie Page */

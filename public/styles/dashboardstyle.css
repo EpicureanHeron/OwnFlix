@@ -1,0 +1,119 @@
+body{
+    position: relative;
+}
+
+.list-group-item {
+    line-height: 2.5;
+  }
+  /* Background */
+
+.userdash{
+    position: relative;
+      background-color:  rgb(131, 126, 126);
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(12, 9, 9, 0.6);
+      text-shadow: 2px 1px 1px rgba(54, 32, 32, 0.6);
+  };
+
+
+/* Header / title  landing-header*/
+#usercontainer{
+    padding-top:2em;
+    background-color: rgba(12, 9, 9, 0.6);
+}
+#usercontainer #userjumbotron{
+    margin: 2rem 0;
+    background-color: rgba(12, 9, 9, 0.6);
+    color: whitesmoke
+}
+
+#logo{
+    font-family: 'karla', sans-serif;
+    font-size:3rem;
+    font-weight: 300;
+    color: #D72f2f;
+    text-shadow: 2px 1px 1px  rgba(29, 28, 28, 0.705)
+}
+#sign-in, #search-button, #your-movies-button, #User-dashboard, #dashboard-button, #user-page-button, #searchMovieBtn, #rentMovieBtn, #user-checkin-movie  {
+    float:right; 
+    margin-top: 1rem; 
+    background-color: #D72f2f;
+    text-shadow: 1px .5px .5px  rgba(235, 218, 218, 0.493);
+    color: whitesmoke;
+}
+
+
+
+#login .buttons{
+    margin-top:2em;
+    text-shadow: 1px .5px .5px  rgb(139, 95, 95)
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(12, 9, 9, 0.6);
+    color: rgb(8, 6, 6);
+
+}
+
+/* Front Page ID login-view*/
+#login{
+    padding: 5em 0;
+}
+/* Sign in Page class signin-user-view*/
+.sign-in-form{
+    border:2px solid black;
+    text-align: center;
+    padding: 2em;
+    color: rgb(8, 6, 6);
+    background-color: rgba(187, 184, 184, 0.856);
+    text-shadow: 1px .5px .5px  rgba(48, 39, 39, 0.493)
+}
+
+/* New Account Page class new-user-view*/
+.sign-in-form{
+    border:2px solid black;
+    text-align: center;
+    padding: 2em;
+    color: rgb(8, 6, 6);
+    background-color: rgba(187, 184, 184, 0.856);
+    text-shadow: 1px .5px .5px  rgba(48, 39, 39, 0.493)
+}
+
+/* Dashboard Page */
+#top-section, #mid-section, #bot-section{
+    margin: 1rem 0;
+}
+
+/* Bounce In */
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+/* Search Page */
+#addButtonForm{
+    margin: 3rem 0;
+}
+#searchMovie, #rentMovie{
+    width: 100%;
+}
+
+
+/* Movie Page */

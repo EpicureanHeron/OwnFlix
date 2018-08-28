@@ -1,0 +1,68 @@
+	<div class='userdash'>
+        <!--Header Div-->
+        <div class = "landing-header">
+            <!--logo and sign in button-->
+            <Div class="container">
+                <div class="row">
+                    <div class="col-sm-2"><a class="navbar-brand text-dark"  href="/"><p id="logo">OwnFlix</p></a></div>
+                    <div class="col-sm-10" id="landing-header-view">
+                        <div class="row">
+                            <div class="col-sm-12" style="display: inline;"><a class="navbar-brand text-dark hvr-bounce-in"  href="Dashboard" style="float: right;"><button type='button' class="btn btn-default" id="dashboard-button" style="color: whitesmoke">Dashboard</button></a>
+                            <a class="navbar-brand text-dark hvr-bounce-in"  href="movies" style="float: right;"><button type='button' class="btn btn-default" id="user-page-button" style="color: whitesmoke">User</button></a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </Div>
+        </div>
+
+        <!--Main Content Div-->
+        <div class='container usercontainer'>
+                <div class='jumbotron' style=" background-color: rgba(12, 9, 9, 0.6); color: whitesmoke">
+                <div class="row">
+
+                    <div class = "col-sm-12" >
+                        <!--containers get put here-->
+                        <h3><u>Currently Checked Out</u></h3>
+                        <div class="row" id="top-section">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-sm-12 "><a href="Search"><img src="img/BlankPoster.png"></a></div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+		<div class='container ownedcontainer'>
+						<div class='jumbotron' style=" background-color: rgba(12, 9, 9, 0.6); color: whitesmoke">
+						<div class="row">
+
+								<div class = "col-sm-12" >
+										<!--containers get put here-->
+										<h3><u>Claimed/Owned</u></h3>
+										<div class="row">
+										{{#each owned}}
+											<div class='col-sm-6 addMovie'>
+												<h2>{{this.title}}</h2>
+												<div><img src={{this.poster}} /></div>
+												<p>Loan Status : {{#if this.loanStatus}} <span>Lent Out</span>{{else}}<span>Not Lent Out</span>{{/if}}</p>
+												<p>Actors : {{this.actors}}</p>
+												<p>Director : {{this.director}}</p>
+											</div>
+										{{/each}}
+									</div>
+										<!-- <p>{{cats}}</p>
+										{{#each kinds}}
+										<p>{{this.kind}} {{this.name}}</p>
+										{{/each}} -->
+
+						</div>
+				</div>
+
+		</div>
+</div>
