@@ -33,6 +33,7 @@ Movie information is provided through themoviedb API.  https://developers.themov
 Express   
 Body-parser   
 Express-handlebars  
+Passport
 
 
 ### Design Process   
