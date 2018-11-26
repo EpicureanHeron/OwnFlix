@@ -1,5 +1,7 @@
 ## OWNFLIX.  A Local DVD Sharing Platform.  
 
+[Original Group Project Repo](https://github.com/Soltis13/OwnFlix)
+
 ## Building the Source  
 
 For prerequisites and detailed instructions please read the
