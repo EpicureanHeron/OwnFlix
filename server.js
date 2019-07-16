@@ -32,7 +32,8 @@ var saltRounds = 10;
 // express-mysql-sessions settings
 var options = {
   host: process.env.DB_HOST || "localhost",
-  port: 3306,
+  //added the below on 7/16/19
+  port: process.env.port || 3306,
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASSWORD || "root",
   database: process.env.DB_NAME || "ownflix"
