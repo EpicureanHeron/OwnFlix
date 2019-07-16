@@ -20,7 +20,7 @@
     "express-mysql-session": "^2.1.0",
     "express-session": "^1.16.1",
     "express-validator": "^6.1.1",
-    "heroku": "^7.22.9",
+    "heroku": "^7.26.2",
     "moviedb": "^0.2.10",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.5",
