@@ -18,7 +18,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-mysql-session": "^2.1.0",
-    "express-session": "^1.16.1",
+    "express-session": "^1.16.2",
     "express-validator": "^6.1.1",
     "heroku": "^7.26.2",
     "moviedb": "^0.2.10",
