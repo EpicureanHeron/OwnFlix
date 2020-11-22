@@ -22,7 +22,7 @@
     "express-validator": "^6.1.1",
     "heroku": "^7.47.3",
     "moviedb": "^0.2.10",
-    "mysql": "^2.16.0",
+    "mysql": "^2.18.1",
     "mysql2": "^1.6.5",
     "omdb": "^0.8.0",
     "omdb-client": "^2.0.0",
